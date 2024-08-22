@@ -2,64 +2,68 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Notizen zu Datenmodellen</title>
+    <title>Datentypen und Datenstrukturen</title>
 </head>
 <body>
-    <h1>Notizen für den Vortrag über Datenmodelle</h1>
+    <h1>Datentypen und Datenstrukturen im Zusammenhang</h1>
 
-    <h2>1. Relationales Datenmodell</h2>
+    <h2>Datentypen</h2>
+    <p>Datentypen definieren die Art der Daten, die gespeichert werden können:</p>
     <ul>
-        <li><strong>Entstehungszeit:</strong> 1970er Jahre</li>
-        <li><strong>Analogie:</strong> Daten wie in einer Excel-Tabelle organisiert</li>
-        <li><strong>Schlüssel:</strong> Betonung ihrer Wichtigkeit für Beziehungen zwischen Tabellen</li>
-        <li><strong>Normalisierung:</strong> Erklären als Vermeidung von Redundanzen und Inkonsistenzen</li>
-        <li><strong>Beispiele:</strong> MySQL für Webanwendungen, Oracle in Unternehmen</li>
+        <li><strong>Einfache Datentypen:</strong>
+            <ul>
+                <li>Numerisch (Integer, Float, Decimal): Grundlage für mathematische Operationen</li>
+                <li>Textuell (Char, Varchar, Text): Basis für Textverarbeitung und -speicherung</li>
+                <li>Datum/Zeit (Date, Time, Timestamp): Ermöglichen zeitbezogene Operationen</li>
+                <li>Boolesch: Fundamentaler Typ für logische Operationen</li>
+            </ul>
+        </li>
+        <li><strong>Komplexe Datentypen:</strong>
+            <ul>
+                <li>Arrays: Ermöglichen die Speicherung mehrerer Werte gleichen Typs</li>
+                <li>Objekte: Basis für objektorientierte Datenmodelle</li>
+                <li>XML, JSON: Strukturierte Datenformate für komplexe Informationen</li>
+            </ul>
+        </li>
+        <li><strong>Benutzerdefinierte Datentypen:</strong> Erlauben die Erstellung spezifischer Datentypen basierend auf vorhandenen</li>
     </ul>
 
-    <h2>2. Objektorientiertes Datenmodell</h2>
+    <h2>Datenstrukturen</h2>
+    <p>Datenstrukturen organisieren und verwalten die Datentypen:</p>
     <ul>
-        <li><strong>Zeitliche Einordnung:</strong> 1980er als Antwort auf komplexere Datenanforderungen</li>
-        <li><strong>Vergleich:</strong> Objekte repräsentieren Dinge mit Eigenschaften und Verhaltensweisen</li>
-        <li><strong>Prinzipien mit Beispielen:</strong>
+        <li><strong>Tabellen:</strong> Grundstruktur des relationalen Modells
             <ul>
-                <li>Vererbung: Wie bei Fahrzeugen (Auto erbt von Fahrzeug)</li>
-                <li>Kapselung: Daten und Methoden in einem Objekt zusammengefasst</li>
-                <li>Polymorphismus: Gleiche Methode, unterschiedliches Verhalten (z.B. "starten" bei verschiedenen Fahrzeugen)</li>
+                <li>Organisieren Daten in Zeilen und Spalten</li>
+                <li>Jede Spalte hat einen definierten Datentyp</li>
+            </ul>
+        </li>
+        <li><strong>Klassen/Objekte:</strong> Basis des objektorientierten Modells
+            <ul>
+                <li>Kapseln Daten (Attribute) und Methoden</li>
+                <li>Attribute können verschiedene Datentypen haben</li>
+            </ul>
+        </li>
+        <li><strong>Hierarchien:</strong> Für baumartige Strukturen
+            <ul>
+                <li>Nutzen oft rekursive Beziehungen</li>
+                <li>Können mit verschiedenen Datentypen arbeiten</li>
+            </ul>
+        </li>
+        <li><strong>Graphen:</strong> Für komplexe Beziehungen
+            <ul>
+                <li>Knoten und Kanten können verschiedene Datentypen enthalten</li>
+                <li>Ermöglichen die Darstellung vielfältiger Verbindungen</li>
             </ul>
         </li>
     </ul>
 
-    <h2>3. Objektrelationales Datenmodell</h2>
+    <h2>Zusammenhang</h2>
+    <p>Datentypen und Datenstrukturen sind eng miteinander verbunden:</p>
     <ul>
-        <li><strong>Vorstellung:</strong> Als "Brücke" zwischen relational und objektorientiert</li>
-        <li><strong>Vorteil:</strong> Kombination der Stärken beider Modelle</li>
-        <li><strong>Beispiel:</strong> Adresse als komplexer Typ in einer Tabelle</li>
-    </ul>
-
-    <h2>4. Datentypen und -strukturen</h2>
-    <ul>
-        <li><strong>Einfache Typen mit Beispielen:</strong>
-            <ul>
-                <li>Integer: Alter einer Person</li>
-                <li>Varchar: Name oder E-Mail-Adresse</li>
-                <li>Date: Geburtsdatum</li>
-            </ul>
-        </li>
-        <li><strong>Komplexe Typen:</strong>
-            <ul>
-                <li>Array: Liste von Telefonnummern</li>
-                <li>JSON: Strukturierte Daten wie Produktinformationen</li>
-            </ul>
-        </li>
-        <li><strong>Benutzerdefinierte Typen:</strong> Möglichkeit zur Anpassung an spezifische Anforderungen betonen</li>
-    </ul>
-
-    <h2>5. Allgemeine Hinweise</h2>
-    <ul>
-        <li>Entwicklung der Modelle als Reaktion auf wachsende Komplexität der Daten darstellen</li>
-        <li>Praxisbeispiele für jedes Modell nennen</li>
-        <li>Vor- und Nachteile jedes Modells kurz ansprechen</li>
-        <li>Interaktive Elemente einbauen: Fragen ans Publikum, um Verständnis zu prüfen</li>
+        <li>Datenstrukturen nutzen Datentypen, um Informationen zu organisieren und zu speichern</li>
+        <li>Die Wahl der Datentypen beeinflusst die Effizienz und Funktionalität der Datenstrukturen</li>
+        <li>Komplexe Datentypen können selbst als kleine Datenstrukturen betrachtet werden</li>
+        <li>Die Kombination von Datentypen und -strukturen ermöglicht die Modellierung realer Systeme in Datenbanken</li>
     </ul>
 </body>
 </html>
